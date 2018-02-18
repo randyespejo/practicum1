@@ -1,0 +1,71 @@
+/*{
+    width: 100%;
+    margin: 0;
+}*/
+
+/*HEADER*/
+.navigation{
+    background-color: aqua;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+.header{
+    background-color: mintcream;
+    display:block;
+    clear: both;
+}
+
+#tjs{
+    align-items: center;
+    #height: 50px;
+    #width: 70px;
+    
+}
+#scis{
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-top: 20px;
+}
+#slu{
+    width: 180px;
+    height: 200px;
+    float: right;
+    padding-top: 30px;
+}
+.center{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+.header h2{
+    text-align: center;
+    #text-indent: inherit;
+}
+
+.navigation ul{
+    list-style-type: none;
+    display: inline-block;
+    clear: both;
+    background-color: cornflowerblue;
+    margin-left: 400px;
+}
+.navigation li{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    #width: 300px;
+}.navigation a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 150px;
+    font-size: 30px;
+}
+.logout{
+    background-color: chartreuse;
+    float: right;
+    clear: both;
+    padding: 15px;
+}
