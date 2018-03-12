@@ -1,62 +1,72 @@
-/*{
+*{
  margin:0;
  width: 100% auto;
-}*/
+}
+
 .container{
   background-color: white;
 }
+
 .col p {
   background-color: #999;
 }
+
 .scis{
   background-color: #999;
-  padding-top: 50px;
+  padding-top: 25px;
+  
 }
+
 .title{
   background-color: #999;
 }
 
 .slu{
   background-color: #999;
-  padding-top: 25px;
+  padding-top: 0px;
 }
+
 .menu{
-  background-color: white;
+  background-color: #333;
 }
+
+.nav-tabs {
+    border-bottom: none!important;
+}
+
 .nav-tabs li{
-  color: #000;
+  color: #333;
   padding: 10px;
   margin-left: 30px;
   font-weight: bold;
 }
+
 .nav-tabs li a{
   padding: 12px;
   text-decoration: none;
+  color: white;
 }
+
 li a:hover{
   background-color: #666;
 }
 
 .sidebar{
-  background-color: #111;
+  background-color: #333;
 }
 
 /*==HOME==*/
 .parent {
   width: 100%;
   margin: 0 auto;
-  background-color: red;
+  background-color: white;
   padding-top: 10px;
 }
 
 .child {
   width: 60%;
-  #height: 25%;
-  #padding: 25%;
-  background-color:#999;
-  border: 2px solid black;
-  #margin: .5em auto;
   float: left;
+  padding-bottom: 7px;
 }
 .child img{
   width: 100%;
@@ -64,9 +74,8 @@ li a:hover{
 
 .twins {
   width: 40%;
-  background-color: #999;
-  border: 2px solid black;
   float: right;
+  padding: 2px;
 }
 .twins img{
   height: 144.2px;
@@ -107,9 +116,10 @@ li a:hover{
 .footer1{
   background-color: #333;
   clear: both;
+  padding-top: 5px;
 }
 
-.footer h4{
-  color: blue;
+.footer h5{
+  color: white;
   padding: 10px;
 }

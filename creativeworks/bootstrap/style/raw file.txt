@@ -1,10 +1,10 @@
 <!DOCTYPE hmtl>
 <html lang="en">
 	<head>
-		<title>Home</title>
+		<title>SCIS Journal - Home</title>
 		<meta charset="utf-8" >
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" href="style\style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	</head>
@@ -18,7 +18,7 @@
 				</div>
 				
 				<div class="col-md-8 text-center title">
-					<img src="img/TSJ.png" alt="logo">
+					<img src="img/TSJ1.png" alt="logo">
 					<h6>School of Computing and Information Technology</h6>
 					<h6>Saint Louis University</h6>
 					<h6>Baguio, City</h6>
@@ -67,9 +67,9 @@
 				</div>
 			</div>
 
-			<div class="row content-lg-center footer1">
+			<div class="content-lg-center footer1">
 				<div class="col text-center footer">
-					<h5>SCIS Journal &copy; 2018</h5>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
 				</div>
 			</div>
 
