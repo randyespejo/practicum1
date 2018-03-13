@@ -34,7 +34,7 @@
 .slu img{
   width: 50%;
 }
-	
+
 .menu{
   background-color: #333;
 }
@@ -93,16 +93,19 @@ li a:hover{
 
 /*==LATEST NEWS==*/
 .latestnews{
-  background-color: #845676;
-  #width: 100%;
-  #margin-left: 20px;
+  background-color: #ffffff;
+  padding: 10px;
 }
 .latestimgnews{
-  background-color: #765434;
-
+  background-color: #ffffff;
 }
+
+.latestnews img{
+  width: 100%;
+}
+
 .latestcontentnews{
-  background-color: #946477;
+  background-color: #999;
 }
 
 /*==ABOUT US==*/
