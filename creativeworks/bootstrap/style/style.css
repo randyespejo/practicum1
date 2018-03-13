@@ -14,11 +14,12 @@
 
 .scis{
   background-color: #999;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .title{
   background-color: #999;
+  padding-bottom: 10px;
 }
 
 .title h6{
@@ -28,7 +29,7 @@
 
 .slu{
   background-color: #999;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .slu img{
@@ -51,9 +52,10 @@
 }
 
 .nav-tabs li a{
-  padding: 11px;
+  padding: 7px;
   text-decoration: none;
   color: white;
+  font-size: 20px;
 }
 
 li a:hover{
@@ -132,4 +134,5 @@ li a:hover{
 .footer h5{
   color: white;
   padding: 10px;
+  font-size: 20px;
 }
