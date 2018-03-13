@@ -1,6 +1,7 @@
 *{
  margin:0;
  width: 100% auto;
+ font-family: 'Trebuchet MS', sans-serif;
 }
 
 .container{
@@ -13,19 +14,27 @@
 
 .scis{
   background-color: #999;
-  padding-top: 25px;
-  
+  padding-top: 20px;
 }
 
 .title{
   background-color: #999;
 }
 
-.slu{
-  background-color: #999;
-  padding-top: 0px;
+.title h6{
+	line-height: 13px;
+	font-size: 18px;
 }
 
+.slu{
+  background-color: #999;
+  padding-top: 10px;
+}
+
+.slu img{
+  width: 50%;
+}
+	
 .menu{
   background-color: #333;
 }
@@ -42,7 +51,7 @@
 }
 
 .nav-tabs li a{
-  padding: 12px;
+  padding: 11px;
   text-decoration: none;
   color: white;
 }
@@ -82,6 +91,20 @@ li a:hover{
   width: 100%
 }
 
+/*==LATEST NEWS==*/
+.latestnews{
+  background-color: #845676;
+  #width: 100%;
+  #margin-left: 20px;
+}
+.latestimgnews{
+  background-color: #765434;
+
+}
+.latestcontentnews{
+  background-color: #946477;
+}
+
 /*==ABOUT US==*/
 .about{
   background-color: #999;
@@ -97,19 +120,6 @@ li a:hover{
 .info p{
   #background-color: #666;
   padding: 50px;
-}
-/*==LATEST NEWS==*/
-.latestnews{
-  background-color: #845676;
-  #width: 100%;
-  #margin-left: 20px;
-}
-.latestimgnews{
-  background-color: #765434;
-
-}
-.latestcontentnews{
-  background-color: #946477;
 }
 
 /*==FOOTER==*/
