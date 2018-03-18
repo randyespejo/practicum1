@@ -23,17 +23,22 @@
 }
 
 .title h6{
-	line-height: 13px;
-	font-size: 18px;
+	line-height: 1vw;
+	font-size: 1.3vw;
 }
 
 .slu{
   background-color: #999;
   padding-top: 15px;
 }
-
+.title img{
+  width: 30vw;
+}
+.scis img{
+  width: 13vw;
+}
 .slu img{
-  width: 50%;
+  width: 10vw;
 }
 
 .menu{
@@ -127,7 +132,7 @@ background-image: url("../img/slu1.jpg");
 /* height: 100%; */
 background-size: cover;
   background-color: #999;
-  width: 100%;
+  #width: 100%;
   padding: 250px;
 }
 .info{
@@ -148,7 +153,7 @@ background-size: cover;
 .footer1{
   background-color: #000;
   clear: both;
-  padding-top: 5px; 
+  padding-top: 5px;
 }
 
 .footer h5{
