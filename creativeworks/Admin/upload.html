@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Upload</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-8 col-md-offset-2">
+
+                            <h1>Create post</h1>
+
+                            <form action="" method="POST">
+
+                                <div class="form-group">
+                                    <label for="title">Title
+                                        <span class="require">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" name="title" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Select Category</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Announcements</option>
+                                        <option>News Articles</option>
+                                        <option>Employment and Internship</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea rows="5" class="form-control" name="description"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <p>
+                                        <span class="require">*</span> - required fields</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group input-file">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-choose" type="button">Choose</button>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder='Choose a file...' />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-reset" type="button">Reset</button>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">
+                                        Post
+                                    </button>
+                                    <button class="btn btn-default">
+                                        Cancel
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="file.js"></script>
+</body>
+
+</html>
