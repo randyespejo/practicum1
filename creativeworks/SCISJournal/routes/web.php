@@ -14,8 +14,12 @@
 Route::get('/', function () {
     return view('index');
 });*/
-Route::get('/','PagesController@index');
+Route::get('/','PostController@index');
 Route::get('/announcement','PagesController@announcement');
 Route::get('/internship','PagesController@internship');
 Route::get('/news','PagesController@news');
 Route::get('/activities','PagesController@activities');
+
+Route::Resource('posts', 'PostController');
+
+Route::get('show', 'PostController@show($id)');
