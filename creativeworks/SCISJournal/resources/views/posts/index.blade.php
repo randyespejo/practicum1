@@ -5,7 +5,7 @@
 <div class="container">
  <!-- first row -->
  {{-- <h1></h1> --}}
- @if(count($posts) > 1)
+ @if(count($posts) > 0)
        @foreach($posts as $post)
        <div class="row">
          <!-- first item -->
@@ -26,6 +26,7 @@
          </div>
        </div>
        @endforeach
+       {{$posts->links()}}
      @else
        <p> no posts found</p>
      @endif
