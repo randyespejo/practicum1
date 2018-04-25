@@ -39,9 +39,11 @@ class PostController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
+            'dropdown' => 'exists:table,column',
             'description' => 'required'
         ]);
-        return 12345;
+
+        return 1243;
     }
 
     /**

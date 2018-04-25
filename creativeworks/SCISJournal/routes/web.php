@@ -23,3 +23,4 @@ Route::get('/activities','PagesController@activities');
 Route::Resource('posts', 'PostController');
 
 Route::get('show', 'PostController@show($id)');
+//Route::get('store', 'PostController@store');

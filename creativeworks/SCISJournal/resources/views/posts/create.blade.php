@@ -33,21 +33,14 @@
                                     <div class="col-md-6 mt-3">
                                         {{Form::label('category', 'Select Category')}}
                                         <br/>
-                                        {{Form::select('', array('Announcement' => 'Announcement', 'news' => 'News Article', 'eai' => 'Employment and Internship'))}}
-                                        {{-- <label for="exampleFormControlSelect1">Select Category</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>Announcements</option>
-                                            <option>News Articles</option>
-                                            <option>Employment and Internship</option>
-                                        </select> --}}
+                                        {{Form::select('size', ['announcement' => 'Announcement', 'news' => 'News Article', 'eai' => 'Employment and Internship'], null, ['placeholder' => 'Choose...'])}}
+                                        {{-- {{Form::select('', array())}} --}}
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-md-12 mt-3">
                                         {{Form::label('description', 'Description')}}
                                         {{Form::textarea('description', '', ['class' => 'form-control', 'place-holder' => 'Description'])}}
-                                        {{-- <label for="description">Description</label>
-                                        <textarea rows="5" class="form-control" name="description"></textarea> --}}
                                     </div>
                                 </div>
 
@@ -65,12 +58,7 @@
 
                                 <div class="form-row">
                                     <div class="mt-3">
-                                        <button type="submit" class="btn btn-primary">
-                                            Post
-                                        </button>
-                                        <button class="btn btn-default">
-                                            Cancel
-                                        </button>
+                                        {{Form::submit('Post', ['class' => 'btn btn-primary'])}}
                                     </div>
                                 </div>
                             </form>
