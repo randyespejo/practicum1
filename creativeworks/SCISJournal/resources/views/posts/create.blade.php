@@ -39,8 +39,8 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col-md-12 mt-3">
-                                        {{Form::label('description', 'Description')}}
-                                        {{Form::textarea('description', '', ['class' => 'form-control', 'place-holder' => 'Description'])}}
+                                        {{Form::label('body', 'Description')}}
+                                        {{Form::textarea('body', '', ['class' => 'form-control', 'place-holder' => 'Description'])}}
                                     </div>
                                 </div>
 

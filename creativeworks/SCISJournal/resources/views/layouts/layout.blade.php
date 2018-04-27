@@ -17,7 +17,10 @@
 </head>
 <body>
     @include('layouts.partial.navbar')
-    @yield('content')
+    <div class="container">
+      @include('layouts.partial.message')
+      @yield('content')
+    </div>
 
 
   <!-- Script bootstrap -->
