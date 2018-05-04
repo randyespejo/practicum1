@@ -21,6 +21,7 @@
       @include('layouts.partial.message')
       @yield('content')
     </div>
+    @include('layouts.partial.footer')
 
 
   <!-- Script bootstrap -->

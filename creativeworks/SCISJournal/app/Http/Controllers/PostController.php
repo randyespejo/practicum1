@@ -15,7 +15,7 @@ class PostController extends Controller
     public function index()
     {
         // $posts = Post::all();
-        $posts = Post::orderBy('created_at', 'desc')->paginate(1);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('posts.index')->with('posts', $posts);
     }
 
@@ -39,7 +39,7 @@ class PostController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
-            'dropdown' => 'exists:table,column',
+            'category' => 'required',
             'body' => 'required'
         ]);
 
@@ -47,6 +47,7 @@ class PostController extends Controller
         $post = new Post;
         $post->title = $request->input('title');
         $post->body = $request->input('body');
+        $post->category = $request->input('category');
         $post->save();
 
         return redirect('/posts')->with('success', 'Post Created');
@@ -62,6 +63,7 @@ class PostController extends Controller
     {
         $post = Post::find($id);
         return view('posts.show')->with('post', $post);
+        // return view('pages.announcement')->with('post', $post);
     }
 
     /**
@@ -87,7 +89,7 @@ class PostController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
-            'dropdown' => 'exists:table,column',
+            'category' => 'required',
             'body' => 'required'
         ]);
 
@@ -95,6 +97,7 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->title = $request->input('title');
         $post->body = $request->input('body');
+        $post->category = $request->input('category');
         $post->save();
 
         return redirect('/posts')->with('success', 'Post Updated');
