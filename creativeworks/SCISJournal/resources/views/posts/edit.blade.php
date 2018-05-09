@@ -29,12 +29,15 @@
                                         </div> --}}
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="col-md-6 mt-3">
-                                        {{Form::label('category', 'Select Category')}}
-                                        <br/>
-                                        {{Form::select('size', ['announcement' => 'Announcement', 'news' => 'News Article', 'eai' => 'Employment and Internship'], null, ['placeholder' => 'Choose...'])}}
-                                        {{-- {{Form::select('', array())}} --}}
+                                <div class="form-group">
+                                    <label for="category" class="col-md-4 control-label">Choose Category</label>
+                                    <div class="col-md-6">
+                                        <select name="category">
+                                            <option value="null">Choose...</option>
+                                            <option value="ANNOUNCEMENTS">Announcements</option>
+                                            <option value="ACTIVITIES">Activities</option>
+                                            <option value="EMPLOYMENT AND INTERNSHIP">Employment and Internship</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-row">
