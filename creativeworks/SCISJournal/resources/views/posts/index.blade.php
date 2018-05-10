@@ -17,7 +17,7 @@
              </div>
              <div class="card-body">
              <h5 class="card-title">{{$post->title}}</h5>
-             <p class="card-text">{{str_limit($post->body,$limit= 200, $end='...')}}</p>
+             <p class="card-text">{!!str_limit($post->body,$limit= 200, $end='...')!!}</p>
                <a href="/posts/{{$post->id}}" class="btn btn-primary">Go somewhere</a>
              </div>
              <div class="card-footer text-muted">

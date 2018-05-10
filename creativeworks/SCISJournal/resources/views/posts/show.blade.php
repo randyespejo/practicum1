@@ -14,7 +14,7 @@
              </div>
              <div class="card-body">
              <h5 class="card-title">{{$post->title}}</h5>
-             <p class="card-text">{{$post->body}}</p>
+             <p class="card-text">{!!$post->body!!}</p>
              </div>
              <div class="card-footer text-muted">
                  <small>Posted on {{$post->created_at}}</small>
