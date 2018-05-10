@@ -34,9 +34,9 @@
                                     <div class="col-md-6">
                                         <select name="category">
                                             <option value="null">Choose...</option>
-                                            <option value="ANNOUNCEMENTS">Announcements</option>
-                                            <option value="ACTIVITIES">Activities</option>
-                                            <option value="EMPLOYMENT AND INTERNSHIP">Employment and Internship</option>
+                                            <option value="Announcements">Announcements</option>
+                                            <option value="Activities">Activities</option>
+                                            <option value="Employment and Internship">Employment and Internship</option>
                                         </select>
                                     </div>
                                 </div>
