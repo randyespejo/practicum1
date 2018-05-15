@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class DashBoardController extends Controller
 {
@@ -23,8 +24,8 @@ class DashBoardController extends Controller
      */
     public function index()
     {
-        $user_id = auth()->user('id');
+        $user_id = auth()->user()->id;
         $user = User::find($user_id);
-        return view('dashboard')->with('posts', $user->posts);
+        return view('/dashboard')->with('posts', $user->posts);
     }
 }
