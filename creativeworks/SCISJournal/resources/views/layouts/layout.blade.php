@@ -21,6 +21,8 @@
       @include('layouts.partial.message')
       @yield('content')
     </div>
+    @include('layouts.partial.footer')
+
 
   <!-- Script bootstrap -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -30,6 +32,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
+<<<<<<< HEAD
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 <<<<<<< HEAD
   <script>
@@ -40,5 +43,11 @@
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
 >>>>>>> 6b4d3f1d7829c67a6a0ac3a73baf5bfbbb8fb368
+=======
+  {{-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+  <script>
+      CKEDITOR.replace( 'article-ckeditor' );
+  </script> --}}
+>>>>>>> 43a097098ff92e394680cb62ae7d3a85c66537fc
 </body>
 </html>

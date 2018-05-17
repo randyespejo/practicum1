@@ -21,7 +21,7 @@
                <a href="/posts/{{$post->id}}" class="btn btn-primary">Go somewhere</a>
              </div>
              <div class="card-footer text-muted">
-             <small>Posted on {{$post->updated_at}} by {{$post->user->name}}</small>
+                 <small>Posted on {{$post->created_at}}</small>
              </div>
            </div>
          </div>
