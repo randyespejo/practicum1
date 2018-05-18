@@ -43,7 +43,7 @@
                                 <div class="form-row">
                                     <div class="col-md-12 mt-3">
                                         {{Form::label('body', 'Description')}}
-                                        {{Form::textarea('body', $post->body, ['class' => 'form-control', 'place-holder' => 'Description'])}}
+                                        {{Form::textarea('body', $post->body, ['id' => 'article-ckeditor', 'class' => 'form-control', 'place-holder' => 'Description'])}}
                                     </div>
                                 </div>
 

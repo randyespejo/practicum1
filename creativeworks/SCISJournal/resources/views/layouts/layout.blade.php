@@ -32,9 +32,22 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
+<<<<<<< HEAD
   {{-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
   <script>
       CKEDITOR.replace( 'article-ckeditor' );
   </script> --}}
+=======
+  <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+<<<<<<< HEAD
+  <script>
+      CKEDITOR.replace( 'article-ckeditor' );
+  </script>
+=======
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
+>>>>>>> 6b4d3f1d7829c67a6a0ac3a73baf5bfbbb8fb368
+>>>>>>> 61b39bfaa57bd6e44857373c474ec669b2351ece
 </body>
 </html>

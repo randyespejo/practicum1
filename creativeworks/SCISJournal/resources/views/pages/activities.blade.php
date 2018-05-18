@@ -2,6 +2,7 @@
 
 @section('content')
 
+<<<<<<< HEAD
   <div class="container">
 	
 	<!-- first row -->
@@ -88,3 +89,11 @@
 
 @endsection
   
+=======
+<<<<<<< HEAD
+@endsection
+  
+=======
+@endsection
+>>>>>>> 6b4d3f1d7829c67a6a0ac3a73baf5bfbbb8fb368
+>>>>>>> 61b39bfaa57bd6e44857373c474ec669b2351ece
