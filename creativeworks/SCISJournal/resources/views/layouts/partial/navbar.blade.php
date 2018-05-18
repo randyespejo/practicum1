@@ -44,7 +44,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
+                            <!-- <ul class="navbar-nav ml-auto">
                               <li class="nav-item">
                                 <a class="nav-link" href="{{url('/announcement')}}">Announcements<span class="sr-only"></span></a>
                               </li>
@@ -58,7 +58,7 @@
                               <li class="nav-item">
                                 <a class="nav-link" href="{{url('/activities')}}">Upcoming Activities</a>
                               </li>
-                            </ul>
+                            </ul> -->
                          
                         <!-- Authentication Links -->
                         @guest
@@ -71,8 +71,7 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a href="/dashboard">DashBoard</a></li>
-                                <a class="btn btn-primary dropdown-item"href="{{view('posts.create')}}">Create Post</a>
+                                  <a href="/dashboard">DashBoard</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -17,11 +17,11 @@
              </div>
              <div class="card-body">
              <h5 class="card-title">{{$post->title}}</h5>
-             <p class="card-text">{!!str_limit($post->body,$limit= 200, $end='...')!!}</p>
+             <p class="card-text">{{str_limit($post->body,$limit= 200, $end='...')}}</p>
                <a href="/posts/{{$post->id}}" class="btn btn-primary">Go somewhere</a>
              </div>
              <div class="card-footer text-muted">
-                 <small>Posted on {{$post->created_at}}</small>
+             <small>Posted on {{$post->updated_at}} by {{$post->user->name}}</small>
              </div>
            </div>
          </div>
