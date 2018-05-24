@@ -30,23 +30,9 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 59cdff22d3d345630049e181d7e3df410765d0ac
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
-<<<<<<< HEAD
->>>>>>> 6b4d3f1d7829c67a6a0ac3a73baf5bfbbb8fb368
-=======
-  {{-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-  <script>
-      CKEDITOR.replace( 'article-ckeditor' );
-  </script> --}}
->>>>>>> 43a097098ff92e394680cb62ae7d3a85c66537fc
-=======
->>>>>>> 59cdff22d3d345630049e181d7e3df410765d0ac
 </body>
 </html>

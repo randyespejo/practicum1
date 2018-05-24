@@ -51,8 +51,34 @@ class PostController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'category' => 'required',
-            'body' => 'required'
+            'body' => 'required',
+            'item' => 'mimes:pdf,doc,docx,jpeg,jpg,png|max: 2000'
         ]);
+
+        //Handle file Upload
+        if($request->hasFile('item')){
+            //Get Filename with Extension
+            $filenameWithExt = $request->file('item')->getClientOriginalName();
+            //Get just Filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just Extension
+            $extension = $request->file('item')->getClientOriginalExtension();
+            // if($extension=='pdf'){
+            //     $content_types='application/pdf';
+            //    }elseif ($extension=='doc') {
+            //      $content_types='application/msword';  
+            //    }elseif ($extension=='docx') {
+            //      $content_types='application/vnd.openxmlformats-officedocument.wordprocessingml.document';  
+            //    }else{
+            //     exit('Requested file does not exist on our server!');
+            //    }
+            //Filename to Store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            //Upload Image
+            $path = $request->file('item')->storeAs('public/items', $fileNameToStore);
+        }else {
+            $filenameToStore = 'noimage.jpg, nofile.pdf';
+        }
 
         //Create Post
         $post = new Post;
@@ -60,9 +86,11 @@ class PostController extends Controller
         $post->body = $request->input('body');
         $post->category = $request->input('category');
         $post->user_id = auth()->user()->id;
+        $post->item = $fileNameToStore;
         $post->save();
 
         return redirect('/posts')->with('success', 'Post Created');
+       
     }
 
     /**

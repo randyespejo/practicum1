@@ -2,7 +2,7 @@
 
 @section('content')
 
-{!! Form::open(['action' => 'PostController@store', 'method' => 'POST']) !!}
+{!! Form::open(['action' => 'PostController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     
 
 <div class="container">
@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-row">
+                                {{-- <div class="form-row" name="items">
                                     <div class="input-group input-file mt-3">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default btn-choose" type="button">Choose</button>
@@ -57,6 +57,10 @@
                                             <button class="btn btn-warning btn-reset" type="button">Reset</button>
                                         </span>
                                     </div>
+                                </div> --}}
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Example file input</label>
+                                    <input type="file" class="form-control-file" name="item">
                                 </div>
 
                                 <div class="form-row">
