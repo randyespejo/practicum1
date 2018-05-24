@@ -4,6 +4,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <div class="container">
 	
@@ -90,7 +91,6 @@
   </div>
   
 >>>>>>> 43a097098ff92e394680cb62ae7d3a85c66537fc
-@endsection
 =======
+>>>>>>> 59cdff22d3d345630049e181d7e3df410765d0ac
 @endsection
->>>>>>> 6b4d3f1d7829c67a6a0ac3a73baf5bfbbb8fb368
