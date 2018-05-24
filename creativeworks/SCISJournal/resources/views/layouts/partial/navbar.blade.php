@@ -1,36 +1,5 @@
-<!-- navbar -->
-{{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{{url('')}}">SCIS Journal</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('/announcement')}}">Announcements<span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('/news')}}">News Articles<span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('/internship')}}">Employment and Internship<span class="sr-only"></span></a>
-        </li>
-    
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('/activities')}}">Upcoming Activities</a>
-        </li>
-      </ul>
-    </div>
-    </nav> --}}
-    <!-- end navbar -->
-
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            {{-- <div class="container"> --}}
-                {{-- <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a> --}}
-                <a class="navbar-brand" href="{{url('')}}">SCIS Journal</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand ml-5" href="{{url('')}}">SCIS Journal</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,34 +13,17 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <!-- <ul class="navbar-nav ml-auto">
-                              <li class="nav-item">
-                                <a class="nav-link" href="{{url('/announcement')}}">Announcements<span class="sr-only"></span></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="{{url('/news')}}">News Articles<span class="sr-only"></span></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="{{url('/internship')}}">Employment and Internship<span class="sr-only"></span></a>
-                              </li>
-                          
-                              <li class="nav-item">
-                                <a class="nav-link" href="{{url('/activities')}}">Upcoming Activities</a>
-                              </li>
-                            </ul> -->
-                         
-                        <!-- Authentication Links -->
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                             <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                         @else
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown mr-5">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a href="/dashboard">DashBoard</a>
+                                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                                  <a href="/dashboard">Dashboard</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

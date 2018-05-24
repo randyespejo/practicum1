@@ -3,7 +3,6 @@
 @section('content')
 
 {!! Form::open(['action' => ['PostController@update', $post->id], 'method' => 'POST']) !!}
-    
 
 <div class="container">
     <div class="row">
@@ -16,7 +15,7 @@
 
                         <div class="col-md-12 col-md-offset-2 mt-3">
 
-                            <h1>Edit post</h1>
+                            <h1>Edit Post</h1>
                             <form class="needs-validation" novalidate>
                                 <div class="form-row">
                                     <div class="col-md-12 mt-2">
@@ -29,17 +28,18 @@
                                         </div> --}}
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="category" class="col-md-4 control-label">Choose Category</label>
-                                    <div class="col-md-6">
+                                <div class="form-row">
+                                    <label for="category" class="col-md-12 mt-3 control-label">Choose Category</label>
+                                    <div class="col-md-3">
                                         <select name="category">
-                                            <option value="null">Choose...</option>
+                                            <option value="No Category">Choose...</option>
                                             <option value="Announcements">Announcements</option>
                                             <option value="Activities">Activities</option>
                                             <option value="Employment and Internship">Employment and Internship</option>
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="form-row">
                                     <div class="col-md-12 mt-3">
                                         {{Form::label('body', 'Description')}}

@@ -2,8 +2,7 @@
 
 @section('content')
 
-{!! Form::open(['action' => 'PostController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
-    
+{!! Form::open(['action' => 'PostController@store', 'method' => 'POST']) !!}
 
 <div class="container">
     <div class="row">
@@ -16,7 +15,7 @@
 
                         <div class="col-md-12 col-md-offset-2 mt-3">
 
-                            <h1>Create post</h1>
+                            <h1>Create Post</h1>
                             <form class="needs-validation" novalidate>
                                 <div class="form-row">
                                     <div class="col-md-12 mt-2">
@@ -29,11 +28,11 @@
                                         </div> --}}
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="category" class="col-md-4 control-label">Choose Category</label>
-                                    <div class="col-md-6">
+                                <div class="form-row">
+                                    <label for="category" class="col-md-12 mt-3 control-label">Choose Category</label>
+                                    <div class="col-md-3">
                                         <select name="category">
-                                            <option value="null">Choose...</option>
+                                            <option value="No Category">Choose...</option>
                                             <option value="Announcements">Announcements</option>
                                             <option value="Activities">Activities</option>
                                             <option value="Employment and Internship">Employment and Internship</option>
@@ -47,7 +46,7 @@
                                     </div>
                                 </div>
 
-                                {{-- <div class="form-row" name="items">
+                                <div class="form-row">
                                     <div class="input-group input-file mt-3">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default btn-choose" type="button">Choose</button>
@@ -57,10 +56,6 @@
                                             <button class="btn btn-warning btn-reset" type="button">Reset</button>
                                         </span>
                                     </div>
-                                </div> --}}
-                                <div class="form-group">
-                                    <label for="exampleFormControlFile1">Example file input</label>
-                                    <input type="file" class="form-control-file" name="item">
                                 </div>
 
                                 <div class="form-row">

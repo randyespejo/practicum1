@@ -2,12 +2,12 @@
 
 @section('content')
 
-<div class="container">
-    <a href="/posts" class='btn btn-light'>BACK</a>
+<div class="container mt-5">
+    <a href="/posts" class='btn btn-secondary'>Back</a>
  <!-- first row -->
        <div class="row">
          <!-- first item -->
-         <div class="col-sm-12 col-md-12 mt-5">
+         <div class="col-sm-12 col-md-12 mt-4">
            <div class="card">
              <div class="card-header">
              <h3>{{$post->category}}</h3>
@@ -21,20 +21,22 @@
              </div>
            </div>
          </div>
-       </div>       
-</div>
-        @if(!Auth::guest())
+       </div>
+       @if(!Auth::guest())
             @if(Auth::user()->id == $post->user_id)
-        <div class="form-row">
-            <div class="mt-">
-                <a href="/posts/{{$post->id}}/edit" class="btn btn-light">Edit</a>
-                {!!Form::open(['action' => ['PostController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                    {{Form::hidden('_method', 'DELETE')}}
-                    {{Form::submit('Delete',['btn btn-danger'])}}
-                {!!Form::close()!!}
+        <div class="row mt-4">
+        <div class="col-2 ml-auto">
+        <a href="/posts/{{$post->id}}/edit" class="btn btn-info">Edit</a>
+        </div>
+        <div class="col-10 ml-auto">
+            {!!Form::open(['action' => ['PostController@destroy', $post->id], 'method' => 'POST', 'class' => 'text-right'])!!}
+            {{Form::hidden('_method', 'DELETE')}}
+            {{Form::button('Delete',array('class' => 'btn btn-danger', 'type' => 'submit'))}}
+            {!!Form::close()!!}
             </div>
         </div>
-        @endif
-        @endif
-
+            @endif
+            @endif
+</div>
+        
 @endsection

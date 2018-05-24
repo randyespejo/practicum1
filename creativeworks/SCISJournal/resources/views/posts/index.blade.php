@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-{{-- @extends('layouts.app') --}}
 
 @section('content')
 
@@ -9,20 +8,18 @@
  @if(count($posts) > 0)
        @foreach($posts as $post)
        <div class="row">
-         <!--Posts -->
+         <!-- first item -->
          <div class="col-sm-12 col-md-12 mt-5">
-           <div class="card">
+           <div class="container">
              <div class="card-header">
              <h3>{{$post->category}}</h3>
              </div>
-             <div class="card-body col-9">
+             <div class="body ml-2 mb-3 mt-3">
              <h5 class="card-title">{{$post->title}}</h5>
-             <iframe src="/storage/items/{{$post->item}}" width="100%" height="300"></iframe>
-             {{-- <img style ="width:100%" src="/storage/items/{{$post->item}}" alt=""> --}}
              <p class="card-text">{{str_limit($post->body,$limit= 200, $end='...')}}</p>
-               <a href="/posts/{{$post->id}}" class="btn btn-primary">Go somewhere</a>
+               <a href="/posts/{{$post->id}}" class="btn btn-primary">See Full Details</a>
              </div>
-             <div class="card-footer text-muted">
+             <div class="card-footer text-muted mb-4">
              <small>Posted on {{$post->updated_at}} by {{$post->user->name}}</small>
              </div>
            </div>
@@ -31,9 +28,11 @@
        @endforeach
        {{$posts->links()}}
      @else
-       <p> no posts found</p>
+      <div class="text-center mt-5">
+       <h3>No Posts Found</h3>
+      </div>
      @endif
-  
+
 </div>
 
 @endsection
